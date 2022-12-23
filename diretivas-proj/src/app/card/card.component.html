@@ -1,0 +1,10 @@
+<h1>My app</h1>
+<p>card works!</p>
+<button>ola mundo</button>
+<!--Utilização da diretiva ngFor em uma lista de produtos e uma interpolação-->
+<ul>
+  <li *ngFor="let p of produtos">{{ p }}</li>
+  <!--usando reatividade para adicionar e remover algo da lista-->
+  <button (click)="adicionar()">Adicionar</button>
+  <button (click)="remover()">Remover</button>
+</ul>

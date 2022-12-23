@@ -1,0 +1,10 @@
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+
+<!--o ng-template é uma diretiva que é usada comtemplate e pode ter uma condição
+atrelada ao seu aparecimento, iremos usar um apelido #anotherBlock
+uma conbinação da diretiva ngIf com binding-->
+<ng-template #anotherBlock>
+  <p>Ola sou um bloco secreto</p>
+</ng-template>
+
+<router-outlet></router-outlet>
