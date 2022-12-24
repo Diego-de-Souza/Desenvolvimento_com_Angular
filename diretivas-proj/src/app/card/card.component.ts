@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
   //criando um vertor do tipo string vazia
   produtos:string[]=[];
+  produtos2:string[]=[];
+  menuType:string = "";
 
   constructor() {
     this.produtos = [
@@ -15,6 +17,13 @@ export class CardComponent implements OnInit {
       "teclado",
       "cabo",
       "font"
+    ]
+    this.produtos2 = [
+      "laranja",
+      "banana",
+      "maça",
+      "pera",
+      "abacate"
     ]
   }
 
@@ -26,5 +35,9 @@ export class CardComponent implements OnInit {
   }
   remover(){
     this.produtos.pop();
+  }
+
+  apagar(index:number){
+    this.produtos2.splice(index, 1);
   }
 }
