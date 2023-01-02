@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {ListaModule} from './lista/lista.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {  IndexModule  } from '../app/pages/index/index.module';
+import {  PortifolioModule  } from '../app/pages/portifolio/portifolio.module';
+import { MenuComponent } from './shared/menu/menu.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ListaModule
+    IndexModule,
+    PortifolioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

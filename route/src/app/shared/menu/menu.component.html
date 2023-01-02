@@ -1,0 +1,28 @@
+<div>
+  <ul>
+    <li>
+      <!--
+        o comando [routerLink]="" é utilizado para que o navegador não recaregue
+        novamente a aplicação, ele permite  navegar pelos linkls sem recarregamento
+        o comando [routerLinkActive]="" é utilizado para usar uma classe nesta navegação
+        o comando [routerLinkActiveOptions] é usado para fazer com que a classe do metodo anterior seja executado somente onde é solicitado, ou seja, exatamente no url passado
+      -->
+      <a
+        [routerLink]="['/']"
+        [routerLinkActive]="['actived']"
+        [routerLinkActiveOptions]="{exact: true}"
+      >
+        home
+      </a>
+    </li>
+    <li>
+      <a
+        [routerLink]="['/portifolio']"
+        [routerLinkActive]="['actived']"
+        [routerLinkActiveOptions]="{exact: true}"
+      >
+        portifolio
+      </a>
+    </li>
+  </ul>
+</div>
